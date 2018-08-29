@@ -1,0 +1,136 @@
+﻿2018-08-28T20:05:14.4465913+10:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-08-28T20:05:14.4475889+10:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.0 execution started
+2018-08-28T20:05:14.4475889+10:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Visual_Studio_Project\UnitTestProject4\UnitTestProject4\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2018-08-28T20:05:14.6101986+10:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-08-28T20:05:14.6130879+10:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Visual_Studio_Project\UnitTestProject4\UnitTestProject4\bin\Debug\UnitTestProject4.dll
+2018-08-28T20:05:14.6130879+10:00;VSTestExecutionThread;Info;Profile: UnitTestProject4
+2018-08-28T20:05:20.7054376+10:00;Thread#14;Info;Discovering target: Default
+2018-08-28T20:05:20.7054376+10:00;Thread#14;Info;Discovering tests from assembly: C:\Visual_Studio_Project\UnitTestProject4\UnitTestProject4\bin\Debug\UnitTestProject4.dll
+Appdomain Disposed
+Test Suite Dump
+#0: UnitTestProject4/UnitTestProject4 - 
+#1: Default - 
+#2: UnitTestProject4 - 
+#3: Google Search Functionality Test - 
+#4: Search keyword Master Chief in google - TestAssembly:UnitTestProject4/Feature:Google+Search+Functionality+Test/Scenario:Search+keyword+Master+Chief+in+google
+#5: Login outlook - TestAssembly:UnitTestProject4/Feature:Google+Search+Functionality+Test/Scenario:Login+outlook
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for UnitTestProject4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I am on google serach web page
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.GivenIAmOnGoogleSerachWebPage() (3.0s)
+Thread#0:B:When I input search text
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.WhenIInputSearchText() (0.1s)
+Thread#0:B:And I click submit button
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.WhenIClickSubmitButton() (2.8s)
+Thread#0:B:Then I should see search result
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.ThenIShouldSeeSearchResult() (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 13.4758134 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I am on mail web page
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.GivenIAmOnMailWebPage() (3.8s)
+Thread#0:B:When I input username and password
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | username               | password  |
+Thread#0:B:  | benyu_2016@outlook.com | @Spatial1 |
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.WhenIInputUsernameAndPassword(<table>) (2.1s)
+Thread#0:B:Then I should see inbox
+Thread#0:T:error:   Expected string length 33 but was 8. Strings differ at index 0.
+Thread#0:T:  Expected: "Sign in to your Microsoft account"
+Thread#0:T:  But was:  "Continue"
+Thread#0:T:  -----------^
+Thread#0:TestItem#5:Scheduler: reschedule tests for testitem #5
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #5
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #5/0 is finished on thread #0 as Failed within 12.6475633 seconds
+Thread#0: Test #5/1 is started on thread #0
+Thread#0:B:Given I am on mail web page
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.GivenIAmOnMailWebPage() (2.5s)
+Thread#0:B:When I input username and password
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | username               | password  |
+Thread#0:B:  | benyu_2016@outlook.com | @Spatial1 |
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.WhenIInputUsernameAndPassword(<table>) (1.4s)
+Thread#0:B:Then I should see inbox
+Thread#0:T:error: Multiple failures or warnings in test:
+Thread#0:T:  1)   Expected string length 33 but was 8. Strings differ at index 0.
+Thread#0:T:  Expected: "Sign in to your Microsoft account"
+Thread#0:T:  But was:  "Continue"
+Thread#0:T:  -----------^
+Thread#0:T:  2)   Expected string length 33 but was 8. Strings differ at index 0.
+Thread#0:T:  Expected: "Sign in to your Microsoft account"
+Thread#0:T:  But was:  "Continue"
+Thread#0:T:  -----------^
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #5
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #5/1 is finished on thread #0 as Failed within 10.3943158 seconds
+Thread#0: Test #5/2 is started on thread #0
+Thread#0:B:Given I am on mail web page
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.GivenIAmOnMailWebPage() (3.6s)
+Thread#0:B:When I input username and password
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | username               | password  |
+Thread#0:B:  | benyu_2016@outlook.com | @Spatial1 |
+Thread#0:T:done: GoogleSearchFunctionalityTestSteps.WhenIInputUsernameAndPassword(<table>) (1.2s)
+Thread#0:B:Then I should see inbox
+Thread#0:T:error: Multiple failures or warnings in test:
+Thread#0:T:  1)   Expected string length 33 but was 8. Strings differ at index 0.
+Thread#0:T:  Expected: "Sign in to your Microsoft account"
+Thread#0:T:  But was:  "Continue"
+Thread#0:T:  -----------^
+Thread#0:T:  2)   Expected string length 33 but was 8. Strings differ at index 0.
+Thread#0:T:  Expected: "Sign in to your Microsoft account"
+Thread#0:T:  But was:  "Continue"
+Thread#0:T:  -----------^
+Thread#0:T:  3)   Expected string length 33 but was 8. Strings differ at index 0.
+Thread#0:T:  Expected: "Sign in to your Microsoft account"
+Thread#0:T:  But was:  "Continue"
+Thread#0:T:  -----------^
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/2 is finished on thread #0 as Failed within 12.0619802 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 2 (test executions: 4)
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
